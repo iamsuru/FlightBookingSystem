@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>FlightTicketBooking</display-name>
+  
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  <servlet-name>RegisterServlet</servlet-name>
+  <servlet-class>com.booking.servlets.RegisterServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>RegisterServlet</servlet-name>
+  <url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>LoginServlet</servlet-name>
+  <servlet-class>com.booking.servlets.LoginServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>LoginServlet</servlet-name>
+  <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>LogoutServlet</servlet-name>
+  <servlet-class>com.booking.servlets.LogoutServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>LogoutServlet</servlet-name>
+  <url-pattern>/LogoutServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>AdminLoginServlet</servlet-name>
+  <servlet-class>com.booking.servlets.AdminLoginServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>AdminLoginServlet</servlet-name>
+  <url-pattern>/AdminLoginServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>AddFlightServlet</servlet-name>
+  <servlet-class>com.booking.servlets.AddFlightServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>AddFlightServlet</servlet-name>
+  <url-pattern>/AddFlightServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>RemoveFlight</servlet-name>
+  <servlet-class>com.booking.servlets.RemoveFlight</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>RemoveFlight</servlet-name>
+  <url-pattern>/RemoveFlight</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+  <servlet-name>SearchFlightServlet</servlet-name>
+  <servlet-class>com.booking.servlets.SearchFlightServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>SearchFlightServlet</servlet-name>
+  <url-pattern>/SearchFlightServlet</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  <servlet-name>BookFlightServlet</servlet-name>
+  <servlet-class>com.booking.servlets.BookFlightServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>BookFlightServlet</servlet-name>
+  <url-pattern>/BookFlightServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>userBookingServlet</servlet-name>
+  <servlet-class>com.booking.servlets.userBookingServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>userBookingServlet</servlet-name>
+  <url-pattern>/userBookingServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
